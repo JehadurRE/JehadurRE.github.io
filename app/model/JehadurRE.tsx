@@ -4,12 +4,6 @@ import { useAnimations, useFBX, useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
 import { useFrame } from "@react-three/fiber";
 import { useControls } from "leva";
-import getConfig from "next/config";
-
-
-
-const { publicRuntimeConfig } = getConfig();
-
 
 
 type GLTFResult = GLTF & {
@@ -56,8 +50,7 @@ export function JehadurRE(props:JehadurREProps) {
   const group = useRef<THREE.Group>(null);
 
 
-  const { publicRuntimeConfig } = getConfig();
-  const { nodes, materials } = useGLTF(`$${publicRuntimeConfig.basePath}/model/JehadurRE.glb`) as GLTFResult;
+  const { nodes, materials } = useGLTF(`$${process.env.NEXT_PUBLIC_BASE_PATH}/model/JehadurRE.glb`) as GLTFResult;
   const typingAnimation = useFBX("animations/Typing.fbx").animations;
   typingAnimation[0].name = "Typing";
 
@@ -183,4 +176,4 @@ export function JehadurRE(props:JehadurREProps) {
   );
 }
 
-useGLTF.preload(`${publicRuntimeConfig.basePath}/model/JehadurRE.glb`);
+useGLTF.preload(`${process.env.NEXT_PUBLIC_BASE_PATH}/model/JehadurRE.glb`);
