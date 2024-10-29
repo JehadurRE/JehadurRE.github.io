@@ -50,7 +50,8 @@ export function JehadurRE(props:JehadurREProps) {
   const group = useRef<THREE.Group>(null);
 
 
-  const { nodes, materials } = useGLTF(`$${process.env.NEXT_PUBLIC_BASE_PATH}/model/JehadurRE.glb`) as GLTFResult;
+  console.log(process.env.NEXT_PUBLIC_BASE_PATH);
+  const { nodes, materials } = useGLTF(`${process.env.NEXT_PUBLIC_BASE_PATH}/model/JehadurRE.glb`) as GLTFResult;
   const typingAnimation = useFBX("animations/Typing.fbx").animations;
   typingAnimation[0].name = "Typing";
 
