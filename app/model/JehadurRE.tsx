@@ -51,7 +51,7 @@ export function JehadurRE(props:JehadurREProps) {
 
 
   console.log(process.env.NEXT_PUBLIC_BASE_PATH);
-  const { nodes, materials } = useGLTF(`${process.env.NEXT_PUBLIC_BASE_PATH||""}/model/JehadurRE.glb`) as GLTFResult;
+  const { nodes, materials } = useGLTF(`model/JehadurRE.glb`) as GLTFResult;
   const typingAnimation = useFBX("animations/Typing.fbx").animations;
   typingAnimation[0].name = "Typing";
 
@@ -177,4 +177,4 @@ export function JehadurRE(props:JehadurREProps) {
   );
 }
 
-useGLTF.preload(`${process.env.NEXT_PUBLIC_BASE_PATH||""}/model/JehadurRE.glb`);
+useGLTF.preload(`model/JehadurRE.glb`);
