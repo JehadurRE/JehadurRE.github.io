@@ -1,0 +1,61 @@
+[
+    {
+      "title": "UI/UX Design",
+      "icon": "🎨",
+      "description": [
+        "Crafting seamless user experiences with a keen eye for design.",
+        "I specialize in creating intuitive and aesthetically pleasing interfaces.",
+        "I focus on understanding user behavior to design applications that are functional and enjoyable."
+      ],
+      "toolsUsed": ["Figma", "Adobe XD", "Sketch"]
+    },
+    {
+      "title": "Frontend Development",
+      "icon": "💻",
+      "description": [
+        "I bring designs to life with clean, efficient code.",
+        "As a front-end developer, I work with the latest technologies like React, Next.js, and TailwindCSS.",
+        "I build responsive and dynamic websites that ensure a smooth user experience across devices."
+      ],
+      "toolsUsed": ["React", "Next.js", "TailwindCSS"]
+    },
+    {
+      "title": "Prototyping & Wireframing",
+      "icon": "🛠️",
+      "description": [
+        "Before diving into development, I create wireframes and prototypes to visualize the final product.",
+        "This helps ensure clarity, saves time, and makes the design process collaborative and agile."
+      ],
+      "toolsUsed": ["Figma", "InVision", "Balsamiq"]
+    },
+    {
+      "title": "Responsive Web Design",
+      "icon": "📱",
+      "description": [
+        "I build websites that are not only beautiful but also adaptable.",
+        "Whether on a desktop or mobile device, I ensure the design looks great and functions perfectly.",
+        "Creating a seamless experience for all users."
+      ],
+      "toolsUsed": ["Bootstrap", "TailwindCSS", "CSS Flexbox/Grid"]
+    },
+    {
+      "title": "Interactive Design",
+      "icon": "✨",
+      "description": [
+        "I specialize in creating interactive elements and animations that engage users and improve the overall experience.",
+        "From micro-interactions to immersive animations, I add that extra touch of creativity to make interfaces stand out."
+      ],
+      "toolsUsed": ["Framer Motion", "GSAP", "CSS Animations"]
+    },
+    {
+      "title": "Component-Based Development (React)",
+      "icon": "⚛️",
+      "description": [
+        "With expertise in React and component-based development, I build scalable, reusable UI components.",
+        "This approach ensures maintainability and flexibility for future updates.",
+        "Helping to keep the code clean and modular."
+      ],
+      "toolsUsed": ["React", "TypeScript", "Styled Components"]
+    }
+  ]
+  
