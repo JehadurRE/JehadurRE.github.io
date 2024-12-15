@@ -1,3 +1,0 @@
-# JehadurRE.github.io
-
-# abcd
