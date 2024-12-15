@@ -17,7 +17,6 @@ export const Experience = () => {
   });
   return (
     <>
-      <OrbitControls />
       <Sky />
       <Environment preset="sunset" />
       <group position-y={-1}>
@@ -51,7 +50,7 @@ export const Experience = () => {
           <planeGeometry />
           <meshStandardMaterial
             color="white"
-            opacity={0.2}
+            opacity={0.5}
             transparent
             roughness={0.1}
             metalness={0.9}

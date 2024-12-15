@@ -1,0 +1,118 @@
+{
+    "skills": [
+      {
+        "category": "Programming Skills",
+        "items": [
+          {
+            "name": "Algorithm Design",
+            "percentage": 85
+          },
+          {
+            "name": "Data Structures",
+            "percentage": 80
+          },
+          {
+            "name": "OOP",
+            "percentage": 90
+          },
+          {
+            "name": "Version Control",
+            "percentage": 70
+          }
+        ]
+      },
+      {
+        "category": "Problem-Solving Skills",
+        "items": [
+          {
+            "name": "Analytical Thinking",
+            "percentage": 90
+          },
+          {
+            "name": "Debugging",
+            "percentage": 85
+          },
+          {
+            "name": "Optimization",
+            "percentage": 75
+          },
+          {
+            "name": "Logical Reasoning",
+            "percentage": 80
+          }
+        ]
+      },
+      {
+        "category": "Languages and Frameworks",
+        "items": [
+          {
+            "name": "JavaScript",
+            "percentage": 85
+          },
+          {
+            "name": "Python",
+            "percentage": 80
+          },
+          {
+            "name": "Java",
+            "percentage": 75
+          },
+          {
+            "name": "React",
+            "percentage": 80
+          },
+          {
+            "name": "Next.js",
+            "percentage": 75
+          },
+          {
+            "name": "Node.js",
+            "percentage": 70
+          }
+        ]
+      },
+      {
+        "category": "Tools",
+        "items": [
+          {
+            "name": "Git",
+            "img": "path/to/git-image.png"
+          },
+          {
+            "name": "Docker",
+            "img": "path/to/docker-image.png"
+          },
+          {
+            "name": "VS Code",
+            "img": "path/to/vscode-image.png"
+          },
+          {
+            "name": "Postman",
+            "img": "path/to/postman-image.png"
+          }
+        ]
+      },
+      {
+        "category": "Databases",
+        "items": [
+          {
+            "name": "MySQL",
+            "img": "path/to/mysql-image.png"
+          },
+          {
+            "name": "MongoDB",
+            "img": "path/to/mongodb-image.png"
+          },
+          {
+            "name": "PostgreSQL",
+            "img": "path/to/postgresql-image.png"
+          },
+          {
+            "name": "Firebase",
+            "img": "path/to/firebase-image.png"
+          }
+        ]
+      }
+    ]
+  }
+  
