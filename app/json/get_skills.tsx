@@ -1,6 +1,3 @@
-import next from "next"
-import { cache } from "react"
-
 export interface Skill {
     category: string
     items: Item[]
@@ -18,8 +15,9 @@ export default async function getSkills(): Promise<Skill[]> {
 
 
     try
-    {
-        const response = await fetch('http://localhost:3000/json/skills.json', { cache: "no-cache" });
+    { 
+        const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+        const response = await fetch(`${baseUrl}/json/skills.json`, { cache: "no-cache" });
 
         const data = await response.json()
         console.log(data.skills)

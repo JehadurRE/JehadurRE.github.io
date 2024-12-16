@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Skill } from "../json/get_skills";
 
-import { VelocityText } from "./Text/velocity_scroll_text";
+
 
 export default function About({ skills }: { skills: Skill[] }) {
   const rawSkills = skills.slice(0, 3);
@@ -45,7 +45,7 @@ export default function About({ skills }: { skills: Skill[] }) {
                 {/* Skill Names */}
                 <div className="flex flex-col items-start justify-start">
                   {skill.items.map((item, index) => {
-                    return <h1>{item.name}</h1>;
+                    return <h1 key={index}>{item.name}</h1>;
                   })}
                 </div>
 

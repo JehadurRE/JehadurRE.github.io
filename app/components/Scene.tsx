@@ -1,7 +1,6 @@
 
 'use client'
 import { Canvas } from "@react-three/fiber"
-import { Experience } from "./Experience"
 import { Scroll, ScrollControls } from "@react-three/drei"
 import Home from "./Home"
 import About from "./About"
@@ -10,7 +9,6 @@ import Clients from "./Clients"
 import Blogs from "./Blogs"
 import Contact from "./Contact"
 import { Skill } from "../json/get_skills"
-import { VelocityText } from "./Text/velocity_scroll_text"
 export default function Scene({skills}: {skills: Skill[]}) {
   return (
     <Canvas shadows camera={{ position: [0, 2, 5], fov: 30 }}>
@@ -44,7 +42,7 @@ export default function Scene({skills}: {skills: Skill[]}) {
 
       </ScrollControls>
 
-      // TODO : make compatible with react-three-fiber 
+      {/*  TODO : make compatible with react-three-fiber  */}
       
      </Canvas>
   

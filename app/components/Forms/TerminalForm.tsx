@@ -49,7 +49,7 @@ export default function TerminalForm() {
         {/* Initial Prompt */}
         {step === 1 && (
           <>
-            <p>Hey there! I'm excited to link 🔗</p>
+            <p>Hey there! I&apos;m excited to link 🔗</p>
             <p className="overflow-hidden whitespace-nowrap font-light">
               ------------------------------------------------------------------------
             </p>
@@ -74,7 +74,7 @@ export default function TerminalForm() {
           <>
             <p className="text-emerald-300">{email}</p>
             <p>
-              Awesome! And what's <span className="text-violet-300">your name?</span>
+              Awesome! And what&apos;s <span className="text-violet-300">your name?</span>
             </p>
             <input
               type="text"
@@ -113,7 +113,7 @@ export default function TerminalForm() {
         {step === 4 && !isSubmitted && (
           <>
             <p className="text-emerald-300">{description}</p>
-            <p>Beautiful! Here's what we've got:</p>
+            <p>Beautiful! Here&apos;s what we&apos;ve got:</p>
             <p>
               <span className="text-blue-300">email:</span> {email}
             </p>

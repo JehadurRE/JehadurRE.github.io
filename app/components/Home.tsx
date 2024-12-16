@@ -1,4 +1,3 @@
-import { animate, motion } from "framer-motion";
 import EncryptButtons from "./Buttons/EncryptButtons";
 import OnScrollReveal from "../animations/on_scroll_reveal";
 import { FaFacebook } from "react-icons/fa";

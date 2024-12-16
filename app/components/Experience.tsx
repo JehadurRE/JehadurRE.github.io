@@ -1,7 +1,6 @@
 import {
   ContactShadows,
   Environment,
-  OrbitControls,
   Sky,
 } from "@react-three/drei";
 import { JehadurRE } from "../model/JehadurRE";
