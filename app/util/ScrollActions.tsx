@@ -19,6 +19,9 @@ export const ScrollActions = (props: ScrollActionsProps) => {
     // set it by default false 
     const isAnimating = useRef(false);
 
+    data.fill.classList.add("top-0");
+    data.fill.classList.add("absolute");
+
 
     // useEffect to implicitly triger the scroll event
     useEffect(() => {
