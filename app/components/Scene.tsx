@@ -9,7 +9,13 @@ import Clients from "./Clients"
 import Blogs from "./Blogs"
 import Contact from "./Contact"
 import { Skill } from "../json/get_skills"
+import { useState } from "react"
+import { ScrollActions } from "../util/ScrollActions"
 export default function Scene({skills}: {skills: Skill[]}) {
+
+
+  const [section, setSection] = useState(0);
+  
   return (
     <Canvas shadows camera={{ position: [0, 2, 5], fov: 30 }}>
       <color attach="background" args={["#ececec"]} />
@@ -18,6 +24,10 @@ export default function Scene({skills}: {skills: Skill[]}) {
       
 
       <ScrollControls pages={6} damping={0.1} >
+
+        {/* Add Scroll Manager for smooth scroll  */}
+
+        <ScrollActions section={section} onSectionChange={setSection} />
         {/* <Experience /> */}
 
 
