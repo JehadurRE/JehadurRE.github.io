@@ -48,6 +48,7 @@ export const ScrollActions = (props: ScrollActionsProps) => {
             // check what section we are in
             const currectSection = Math.floor(data.offset*data.pages );
             console.log(currectSection);
+            console.log("offset:" + data.offset);
 
             // check if the user is scrolling down and current section is 0 
 
@@ -57,7 +58,7 @@ export const ScrollActions = (props: ScrollActionsProps) => {
             }
 
             // check if the user is scrolling up and current section is 1
-            if (data.offset < lastScroll.current && currectSection === 1) {
+            if (data.offset < lastScroll.current && data.offset < 1/(data.pages-1)) {
                 // if it is then return nothing 
                 onSectionChange(0);
             }
