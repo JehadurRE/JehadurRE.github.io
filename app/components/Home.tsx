@@ -5,6 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { Jost } from 'next/font/google';
+import { caveat } from "../fonts";
 
 const jost = Jost({
   weight: ['400', '500', '600'],  // You can specify the weights you need
@@ -28,7 +29,7 @@ export default function Home() {
 
       
       <OnScrollReveal>
-      <h1 className="text-2xl font-light ">I am a full stack developer</h1>
+      <h1 className={`${caveat.className} text-2xl font-light`}>I am a full stack developer</h1>
       </OnScrollReveal>
       <OnScrollReveal>
         {/* Social Logos with Hyperlink */}
