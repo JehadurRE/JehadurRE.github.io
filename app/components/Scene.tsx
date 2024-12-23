@@ -23,7 +23,7 @@ export default function Scene({skills}: {skills: Skill[]}) {
       
       
 
-      <ScrollControls pages={5} damping={0.1} >
+      <ScrollControls pages={6} damping={0.1} >
 
         {/* Add Scroll Manager for smooth scroll  */}
 
