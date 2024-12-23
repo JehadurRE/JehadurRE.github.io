@@ -7,7 +7,7 @@ export default function About({ skills }: { skills: Skill[] }) {
   // const toolsDb = skills.slice(3, 5);
 
   return (
-    <section className="w-screen h-screen flex flex-col items-start justify-start">
+    <section className=" bg-emerald-300 w-screen h-screen flex flex-col items-start justify-start">
       {/* image div */}
       <div className="flex flex-row justify-between">
         {/* add an image avatar */}
