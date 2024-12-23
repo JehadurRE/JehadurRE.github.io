@@ -11,12 +11,16 @@ import Contact from "./Contact"
 import { Skill } from "../json/get_skills"
 import { useState } from "react"
 import { ScrollActions } from "../util/ScrollActions"
+import { Menu } from "../util/Menu"
 export default function Scene({skills}: {skills: Skill[]}) {
 
 
   const [section, setSection] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
   
   return (
+
+    <>
     <Canvas shadows camera={{ position: [0, 2, 5], fov: 30 }}>
       <color attach="background" args={["#ececec"]} />
 
@@ -55,6 +59,10 @@ export default function Scene({skills}: {skills: Skill[]}) {
       {/*  TODO : make compatible with react-three-fiber  */}
       
      </Canvas>
+
+     <Menu onSectionChange={setSection} isOpen={isOpen} setIsOpen= {setIsOpen}   />
+     
+     </>
   
   )
 }
