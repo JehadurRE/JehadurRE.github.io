@@ -47,6 +47,7 @@ export const ScrollActions = (props: ScrollActionsProps) => {
 
             // check what section we are in
             const currectSection = Math.floor(data.offset*data.pages );
+            console.log(currectSection);
 
             // check if the user is scrolling down and current section is 0 
 
