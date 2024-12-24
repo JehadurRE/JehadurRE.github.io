@@ -16,7 +16,7 @@ export default function Scene({skills}: {skills: Skill[]}) {
 
 
   const [section, setSection] = useState(0);
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
   
   return (
 
@@ -60,7 +60,7 @@ export default function Scene({skills}: {skills: Skill[]}) {
       
      </Canvas>
 
-     <Menu onSectionChange={setSection} isOpen={isOpen} setIsOpen= {setIsOpen}   />
+     <Menu onSectionChange={setSection} />
      
      </>
   
