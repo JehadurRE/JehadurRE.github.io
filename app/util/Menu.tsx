@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 import { MenuButton } from "../components/Buttons/MenuButton";
 
-export const Menu = (props: any) => {
+interface MenuProps {
+  section: number;
+  onSectionChange: (section: number) => void;
+}
+
+export const Menu = (props: MenuProps ) => {
   const { section,onSectionChange } = props;
   const [isOpen, setIsOpen] = useState(false);
 
@@ -37,7 +42,12 @@ export const Menu = (props: any) => {
   );
 };
 
-const SingleMenuLabel = (props: any) => {
+interface SingleMenuLabelProps {
+    label: string;
+    onClick: () => void;
+    }
+
+const SingleMenuLabel = (props: SingleMenuLabelProps) => {
   const { label, onClick } = props;
   return (
     // TODO: Dynmic mouse cursor

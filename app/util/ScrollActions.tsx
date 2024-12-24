@@ -12,7 +12,7 @@ interface ScrollActionsProps {
 }
 
 export const ScrollActions = (props: ScrollActionsProps) => {
-    const { section, onSectionChange , currentSection,RememberSection } = props;
+    const { section, onSectionChange , RememberSection } = props;
 
     // getting the scroll data from hook
     const data = useScroll();
