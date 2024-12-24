@@ -6,11 +6,13 @@ import { useEffect, useRef } from "react";
 
 interface ScrollActionsProps {
     section: number;
-    onSectionChange: (newPage: number) => void;
+    onSectionChange: (section: number) => void;
+    currentSection: number;
+    RememberSection: (currentSection: number) => void;
 }
 
 export const ScrollActions = (props: ScrollActionsProps) => {
-    const { section, onSectionChange } = props;
+    const { section, onSectionChange , currentSection,RememberSection } = props;
 
     // getting the scroll data from hook
     const data = useScroll();
@@ -25,19 +27,19 @@ export const ScrollActions = (props: ScrollActionsProps) => {
 
     // useEffect to implicitly triger the scroll event
     useEffect(() => {
-        // trigger gsap animation
-        gsap.to(data.el, {
-            duration: 1,
-            scrollTop: section * data.el.clientHeight,
-            onStart: () => {
-                isAnimating.current = true;
-            },
-            onComplete: () => {
-                isAnimating.current = false;
-            }
-
-
-    })}, [section]);
+        
+            gsap.to(data.el, {
+                duration: 1,
+                scrollTop: section * data.el.clientHeight,
+                onStart: () => {
+                    isAnimating.current = true;
+                },
+                onComplete: () => {
+                    isAnimating.current = false;
+                }
+            });
+        
+        }, [section]);
 
 
     useFrame(() => {
@@ -50,6 +52,8 @@ export const ScrollActions = (props: ScrollActionsProps) => {
 
             // check what section we are in
             const currectSection = Math.floor(data.offset*data.pages );
+            RememberSection(currectSection);
+            // onSectionChange(currectSection);
             // console.log(currectSection);
             // console.log("offset:" + data.offset);
 

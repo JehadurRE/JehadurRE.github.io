@@ -16,6 +16,8 @@ export default function Scene({skills}: {skills: Skill[]}) {
 
 
   const [section, setSection] = useState(0);
+  const [currentSection,RememberSection] = useState(0);
+
   // const [isOpen, setIsOpen] = useState(false);
   
   return (
@@ -31,7 +33,7 @@ export default function Scene({skills}: {skills: Skill[]}) {
 
         {/* Add Scroll Manager for smooth scroll  */}
 
-        <ScrollActions section={section} onSectionChange={setSection} />
+        <ScrollActions section={section} onSectionChange={setSection} currentSection={currentSection} RememberSection={RememberSection}  />
         {/* <Experience /> */}
 
 
@@ -60,7 +62,7 @@ export default function Scene({skills}: {skills: Skill[]}) {
       
      </Canvas>
 
-     <Menu onSectionChange={setSection} />
+     <Menu section= {currentSection} onSectionChange={setSection} />
      
      </>
   
